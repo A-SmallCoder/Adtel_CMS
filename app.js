@@ -17,6 +17,9 @@ const app = express();
 app.engine('handlebars',exphbs({defaultLayout: 'main'}));
 app.set('view engine' , 'handlebars');
 
+//set static folder (public)
+app.use(express.static(path.join(__dirname,'public')));
+
 app.get('/',(request,response) => response.send('INDEX'));
 
 app.use(express.static(path.join(__dirname, 'bower_components')));

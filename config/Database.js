@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 module.exports = new Sequelize('adtell_course_mgnt', 'postgres', 'Password@123', {
     host: 'localhost',
     dialect: 'postgres',
-    operatorsAliases: false,
+    //operatorsAliases: false,
 
     pool: {
       max: 5,

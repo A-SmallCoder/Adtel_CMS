@@ -17,7 +17,8 @@ const Course =db.define('courses',{
         referencesKey: 'dept_id' // <<< Note, its a column name
     },
     course_name:Sequelize.STRING,
-    link: Sequelize.STRING
+    link: Sequelize.STRING,
+    desc:Sequelize.TEXT
 },{
     createdAt: false,
     updatedAt: false

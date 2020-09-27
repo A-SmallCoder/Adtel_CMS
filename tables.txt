@@ -10,3 +10,6 @@ courseid, review_id, comment, rating,
 
 USER:
 userid, email, password
+
+usercourse
+skill

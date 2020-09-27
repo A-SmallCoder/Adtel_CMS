@@ -8,7 +8,9 @@ const Skill = require('../models/Skill');
 router.get('/',(req,res) => Course.findAll()
     .then(Course =>{
         console.log(Course);
-        res.send('COURSES');
+        res.render('Courses',{
+            //
+        });
 })
     .catch(err => console.log('Error: '+err))
 );
