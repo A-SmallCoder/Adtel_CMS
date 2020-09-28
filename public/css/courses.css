@@ -1,0 +1,30 @@
+#search{
+    border: 2px solid #FC671E;
+    border-radius: 15px;
+}
+
+#searchfield{
+    border: none;
+    outline:none;
+    width: 95%;
+}
+
+#searchbtn{
+    border:none;
+    color:grey;
+    outline:none;
+}
+
+#filterbtn{
+    background-color:  #FC671E;
+    border-radius: 12px;
+    border:none;
+    color:white;
+    outline: none;
+}
+
+#filterdiv{
+    display: none;
+    border: 1px solid  #FC671E;
+    background-color:  #ffece3;
+}
