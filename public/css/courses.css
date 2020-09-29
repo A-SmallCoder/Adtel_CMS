@@ -6,7 +6,7 @@
 #searchfield{
     border: none;
     outline:none;
-    width: 95%;
+    width: 92%;
 }
 
 #searchbtn{
@@ -27,4 +27,29 @@
     display: none;
     border: 1px solid  #FC671E;
     background-color:  #ffece3;
+}
+
+#course_count{
+    color:grey;
+}
+
+.course{
+    border: solid 1px #EBC894;
+    border-radius: 15px;
+    padding:15px;
+    color:grey;
+}
+
+#viewbtn{
+    border:none;
+    border-radius:15px;
+    background-color:  #FC671E;
+    color:white;
+    padding: 10px 15px;
+    outline:none;
+}
+
+#skills ul li{
+    margin:5px;
+
 }
