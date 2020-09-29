@@ -1,0 +1,55 @@
+#search{
+    border: 2px solid #FC671E;
+    border-radius: 15px;
+}
+
+#searchfield{
+    border: none;
+    outline:none;
+    width: 92%;
+}
+
+#searchbtn{
+    border:none;
+    color:grey;
+    outline:none;
+}
+
+#filterbtn{
+    background-color:  #FC671E;
+    border-radius: 12px;
+    border:none;
+    color:white;
+    outline: none;
+}
+
+#filterdiv{
+    display: none;
+    border: 1px solid  #FC671E;
+    background-color:  #ffece3;
+}
+
+#course_count{
+    color:grey;
+}
+
+.course{
+    border: solid 1px #EBC894;
+    border-radius: 15px;
+    padding:15px;
+    color:grey;
+}
+
+#viewbtn{
+    border:none;
+    border-radius:15px;
+    background-color:  #FC671E;
+    color:white;
+    padding: 10px 15px;
+    outline:none;
+}
+
+#skills ul li{
+    margin:5px;
+
+}

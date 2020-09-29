@@ -1,0 +1,15 @@
+COURSE:
+courseid,link,key_skill, course_name
+
+DEPARTMENT:
+deptid,req_courseid, name
+[production,graphic design,digital advertising, web development]
+
+REVIEW:
+courseid, review_id, comment, rating, 
+
+USER:
+userid, email, password
+
+usercourse
+skill

@@ -1,0 +1,38 @@
+body{
+    background-color:#F9F6F6;
+    justify-content: center;
+}
+#navbar{
+    background-color: #474343;    
+    box-shadow: 0px 0px 10px rgb(124, 126, 128);
+    padding:20px 20px;
+}
+#navbar span{
+    font-size: 20px;
+    color: wheat;
+}
+ul{
+    list-style-type: none;
+    float: right;
+}
+#logo{
+    height:30px;
+    float: left;
+    margin-right: 10px;
+}
+a, a:hover{
+    margin: 15px;
+    color: wheat;
+}
+#mycontainer{
+    box-shadow: 0px 2px 5px rgb(148, 149, 150);
+    border: solid 1px rgb(179, 179, 179);
+    width: 60%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    #mycontainer{
+        width: 100%;
+    }
+}
