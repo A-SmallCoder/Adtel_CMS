@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "Password@123",
+    "database": "adtell_course_mgnt",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "Password@123",
+    "database": "adtell_course_mgnt",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "Password@123",
+    "database": "adtell_course_mgnt",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

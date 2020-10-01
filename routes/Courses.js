@@ -21,7 +21,7 @@ router.get('/Add',(req,res) =>{
     const data = {
         dept_id: 7,
         course_name: "new course",
-        link: 'https:/google.jm'
+        link: 'https://www.google.com.jm/'
     }
 
     let {dept_id,course_name,link} = data;
