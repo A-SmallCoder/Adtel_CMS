@@ -5,7 +5,9 @@ const Department = require('../models/Department');
 router.get('/', (req,res) => Department.findAll()
 .then(Department =>{
     console.log(Department);
-    res.send('DEPARTMENTS');
+    res.render('Departments',{
+        //
+    });
 })
 .catch(err => console.log('Error: '+err))
 );

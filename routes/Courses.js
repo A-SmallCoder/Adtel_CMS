@@ -16,11 +16,12 @@ router.get('/',(req,res) => Course.findAll()
 );
 
 //POST: COURSE
+//hardcoded course //this is for admin
 router.get('/Add',(req,res) =>{
     const data = {
-        dept_id: 5,
-        course_name: "drawing 101",
-        link: 'https:/google.ca'
+        dept_id: 7,
+        course_name: "new course",
+        link: 'https://www.google.com.jm/'
     }
 
     let {dept_id,course_name,link} = data;

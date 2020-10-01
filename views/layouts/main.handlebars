@@ -12,16 +12,16 @@
          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-         <link rel="stylesheet" href="/css/main.css"/>
+                
+         <link rel="stylesheet" href="css/main.css"/>
          <title>Adtelligent-CMS</title>
      </head>
 
      <body>
 
          <header id="navbar" class="container-fluid  pb-5">
+             <span><img id="logo" src="/images/adtel.jpg"/> Adtelligent CMS</span>
              <ul class="row">
-                 <span id="logo"><img src="/images/adtel.jpg"/></span>
                  <li>
                      <a href="/Courses">Courses</a>
                  </li>
@@ -29,12 +29,19 @@
                      <a href="/Departments">Departments</a>
                  </li>
                  <li>
+                     <a href="#">Profile</a>
+                 </li>
+                 <li>
                      <a href="/">Logout</a>
                  </li>
              </ul>
          </header>
 
-        {{{body}}}
+         <div id="mycontainer" class="container">
+             {{{body}}}
+         </div>
+
+        
 
      </body>
  </html>
