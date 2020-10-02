@@ -5,23 +5,23 @@ COURSE MANAGEMENTT APP FOR ADTELLIGENT
 ------------------------------
 DEV REQUIREMENTS
 ------------------------------
--Node.js
+-Node.js-
 https://nodejs.org/en/download/
 
--Postgres
+-Postgres-
 https://www.postgresql.org/download/
 
--Install Sequelize CLI
+-Install Sequelize CLI-
 npm install --save-dev sequelize-cli
 
 ------------------------------
 SETUP - DEV
 ------------------------------
--run migrations
+-run migrations-
 sequelize db:migrate
 
--start app in dev mode
+-start app in dev mode-
 npm run dev
 
--start app in production mode
+-start app in production mode-
 npm run start
