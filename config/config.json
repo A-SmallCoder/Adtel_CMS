@@ -2,14 +2,14 @@
   "development": {
     "username": "postgres",
     "password": "Password@123",
-    "database": "adtell_course_mgnt",
+    "database": "adtell_course_mgnt_development",
     "host": "localhost",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "Password@123",
-    "database": "adtell_course_mgnt",
+    "database": "adtell_course_mgnt_test",
     "host": "localhost",
     "dialect": "postgres"
   },

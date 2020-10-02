@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-module.exports = new Sequelize('adtell_course_mgnt', 'postgres', 'Password@123', {
+module.exports = new Sequelize('adtell_course_mgnt_development', 'postgres', 'Password@123', {
     host: 'localhost',
     dialect: 'postgres',
     //operatorsAliases: false,
