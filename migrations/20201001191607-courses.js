@@ -12,8 +12,8 @@ module.exports = {
     dept_id:{
         type: Sequelize.BIGINT,
         allowNull: false,
-        references: 'departments', // <<< Note, its table's name, not object name
-        referencesKey: 'dept_id' // <<< Note, its a column name
+        model: 'departments', // <<< Note, its table's name, not object name
+        key: 'dept_id' // <<< Note, its a column name
     },
     course_name:Sequelize.STRING,
     link: Sequelize.STRING,

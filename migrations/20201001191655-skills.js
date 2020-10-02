@@ -12,8 +12,8 @@ module.exports = {
       course_id:{
           type:sequelize.BIGINT,
           allowNull: false,
-          references: 'courses', // <<< Note, its table's name, not object name
-          referencesKey: 'course_id' // <<< Note, its a column name
+          model: 'courses', // <<< Note, its table's name, not object name
+          key: 'course_id' // <<< Note, its a column name
       },
       skill_name:{
           type:sequelize.STRING,
