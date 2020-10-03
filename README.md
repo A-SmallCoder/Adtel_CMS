@@ -17,7 +17,10 @@ npm install --save-dev sequelize-cli
 ------------------------------
 SETUP - DEV
 ------------------------------
--run migrations-
+-create pg database (psql shell)-
+create database adtell_course_mgnt
+
+-run migrations (node.js shell)-
 sequelize db:migrate
 
 -start app in dev mode-
