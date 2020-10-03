@@ -11,6 +11,12 @@ https://nodejs.org/en/download/
 -Postgres-
 https://www.postgresql.org/download/
 
+-Install Sequelize-
+npm i sequelize
+
+-Sequelize--postgres-
+npm i pg pg-hstore
+
 -Install Sequelize CLI-
 npm install --save-dev sequelize-cli
 
