@@ -14,13 +14,17 @@ db.authenticate()
 const app = express(); 
 
 //handlebars
-app.engine('handlebars',exphbs({defaultLayout: 'main'}));
+app.engine('handlebars',exphbs({defaultLayout: 'main',runtimeOptions: {
+      allowProtoPropertiesByDefault: true,
+      allowProtoMethodsByDefault: true
+    }}));
 app.set('view engine' , 'handlebars');
 
 //set static folder (public)
 app.use(express.static(path.join(__dirname,'public')));
 
-app.get('/',(request,response) => response.send('INDEX'));
+//index
+app.get('/',(request,response) => response.render('index'));
 
 app.use(express.static(path.join(__dirname, 'bower_components')));
 app.use('/departments', require('./routes/Departments'));

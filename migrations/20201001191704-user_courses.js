@@ -12,13 +12,7 @@ module.exports = {
       user_id:{
           type:Sequelize.BIGINT,
           allowNull: false,
-          
       },
-      course_name:{
-          type:Sequelize.STRING,
-          allowNull: false,
-      },
-      link:Sequelize.STRING,
       finished:{
           type:Sequelize.BOOLEAN,
           allowNull: false,
@@ -28,8 +22,7 @@ module.exports = {
           type:Sequelize.DATE,
           allowNull: false,
       },
-      end_date: Sequelize.DATE,
-      dept_id: Sequelize.BIGINT
+      end_date: Sequelize.DATE
   },{
       createdAt: false,
       updatedAt: false

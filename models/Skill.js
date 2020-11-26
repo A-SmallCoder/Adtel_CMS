@@ -1,24 +1,24 @@
-const sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 const db = require('../config/Database');
 
 const Skill = db.define('skills',{
     skill_id:{
-        type:sequelize.BIGINT,
+        type:Sequelize.BIGINT,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
     },
     course_id:{
-        type:sequelize.BIGINT,
+        type:Sequelize.BIGINT,
         allowNull: false,
         references: 'courses', // <<< Note, its table's name, not object name
         referencesKey: 'course_id' // <<< Note, its a column name
     },
     skill_name:{
-        type:sequelize.STRING,
+        type:Sequelize.STRING,
         allowNull: false
     },
-    skill_desc: sequelize.TEXT
+    skill_desc: Sequelize.TEXT
 },{
     createdAt: false,
     updatedAt: false

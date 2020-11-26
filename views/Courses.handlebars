@@ -1,56 +1,51 @@
 <link rel="stylesheet" href="/css/courses.css"/>
 
-<div class="container">
+<section class="container">
 
-<form>
-    <div class="row align-middle">
-        <div id="search" class="p-2 m-3 col-md-9 col-sm-12">
-            <input id="searchfield" type="text" placeholder="Search courses" />
-            <button id="searchbtn" type="submit">sub</button>
+    <form>
+        <div class="row align-middle">
+            <div id="search" class="p-2 m-3 col-md-9 col-sm-12">
+                <input id="searchfield" type="text" placeholder="Search courses" />
+                <button id="searchbtn" type="submit">sub</button>
+            </div>
+            <button type="button" id="filterbtn" class="m-3 col-md-2 col-sm-2" onclick="filter()"><strong>Filter</strong></button>
         </div>
-        <button type="button" id="filterbtn" class="m-3 col-md-2 col-sm-2" onclick="filter()"><strong>Filter</strong></button>
-    </div>
 
+        <div id="filterdiv" class="col-md-9 col-sm-12 m-2">
+            <p class="pt-2"><strong>Filter by skills used in the course</strong></p>
+            <input type="text" class="col-md-6 col-sm-12 mb-2" placeholder="Start typing the name of a skill" />
+            <br />
 
-<div id="filterdiv" class="col-md-9 col-sm-12 m-2">
-    <p class="pt-2"><strong>Filter by skills used in the course</strong></p>
-    <input type="text" class="col-md-6 col-sm-12 mb-2" placeholder="Start typing the name of a skill" />
-    <br />
+            <!--selected skills go here-->
+            <span id="skills"></span>
+        </div>
+    </form>
 
-    <!--selected skills go here-->
-    <span id="skills"></span>
-</div>
-</form>
+    <h5 class="m-4"><strong id="course_count">  courses</strong></h5>
 
-<h5 class="m-4"><strong id="course_count"> 57 courses</strong></h5>
+    {{#each Courses}}
+        <div class="course col-md-12 mt-3 mb-5">
+            <div class="row col-md-12">
+                <h5 class="col-md-10">{{course_name}}</h5>
+                <span class="float-right"><strong>Dept Id: {{dept_id}}</strong></span>
+            </div>
+            <p class="pl-4 pt-2">{{desc}}</p>
+                
+            <div id="lowercourse">
+                <a href="#" class="float-right" id="viewbtn">View Course</a>
 
-<div class="course col-md-12 m-3">
-    <div class="row col-md-12">
-        <h5 class="col-md-10">Video Editing 101</h5>
-        <span class="float-right"><strong>Production</strong></span>
-    </div>
-    <p class="pl-4 pt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
-        
-    <button class="float-right" id="viewbtn">View Course</button>
-    <br/>
+                <div id="skills" class="float-left">
+                    <p>Skill1 . Skill2</p>
+                </div>
+            </div>
+            
+        </div>
 
-    <div id="skills">
-        <ul class="row col-md-12">
-            <li>
-                Lumen 5
-            </li>
-            <li>
-                Corel
-            </li>
-            <li>
-                Filmorama
-            </li>
-        </ul>
-    </div>
-    
-</div>
+    {{else}}
+        <p>No courses available</p>
+    {{/each}}
 
-</div>
+</section>
 
 <script>
     function filter() {

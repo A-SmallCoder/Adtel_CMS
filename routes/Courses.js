@@ -6,28 +6,32 @@ const Skill = require('../models/Skill');
 
 //GET: COURSE LIST
 router.get('/',(req,res) => Course.findAll()
-    .then(Course =>{
+    .then(Courses=>{
         console.log(Course);
         res.render('Courses',{
-            //
+            Courses
         });
 })
     .catch(err => console.log('Error: '+err))
 );
 
+//display add course form
+router.get('/Add',(req,res) => res.render('Add'));
+
 //POST: COURSE
 //hardcoded course //this is for admin
-router.get('/Add',(req,res) =>{
+router.post('/Add',(req,res) =>{
     const data = {
         dept_id: 7,
         course_name: "new course",
-        link: 'https://www.google.com.jm/'
+        link: 'https://www.google.com.jm/',
+        desc:"example description"
     }
 
-    let {dept_id,course_name,link} = data;
+    let {dept_id,course_name,link,desc} = data;
 
     //insert into table
-    Course.create({dept_id,course_name,link})
+    Course.create({dept_id,course_name,link,desc})
     .then(course => res.redirect('/courses'))
     .catch(err => console.log('Error: ' + err))
 });

@@ -14,11 +14,6 @@ const UserCourse = db.define('user_course',{
         allowNull: false,
         
     },
-    course_name:{
-        type:Sequelize.STRING,
-        allowNull: false,
-    },
-    link:Sequelize.STRING,
     finished:{
         type:Sequelize.BOOLEAN,
         allowNull: false,
@@ -28,8 +23,7 @@ const UserCourse = db.define('user_course',{
         type:Sequelize.DATE,
         allowNull: false,
     },
-    end_date: Sequelize.DATE,
-    dept_id: Sequelize.BIGINT
+    end_date: Sequelize.DATE
 },{
     createdAt: false,
     updatedAt: false

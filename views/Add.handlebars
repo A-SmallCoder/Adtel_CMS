@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/addCourse.css" />
+<section id="add" class="container">
+    <div class="form-wrap">
+      <h1>Add A Course</h1>
+      <p>New courses can be see in the course list</p>
+      <form>
+        <div class="input-group">
+          <label for="title">Course Title</label>
+          <input type="text" name="course_name" id="title" class="input-box" placeholder="React development" maxlength="100" required />
+        </div>
+        <div class="input-group">
+          <label for="description">Department</label>
+          <input name="dept_id" id="department" class="input-box" placeholder="Department the course belongs to" rows="10" required />
+        </div>
+        <div class="input-group">
+          <label for="skills">Skills Needed</label>
+          <input type="text" name="skills" id="skills" class="input-box" placeholder="javascript, react, PHP" maxlength="100" />
+        </div>
+        <div class="input-group">
+          <label for="description">Course Description</label>
+          <textarea name="desc" id="description" class="input-box" placeholder="Describe the details of the course" rows="10" required=""></textarea>
+        </div>
+        <div class="input-group">
+          <label for="link">Link to course</label>
+          <input name="link" id="link" class="input-box" placeholder="Enter an web link to the course" required="">
+        </div>
+        <input type="submit" value="Add Course" class="btn btn-reverse">
+      </form>
+    </div>
+  </section>
